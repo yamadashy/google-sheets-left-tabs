@@ -1,10 +1,10 @@
 /**
  * override
  */
-#docs-editor {
+#docs-editor-container {
     white-space: nowrap;
 }
-#waffle-grid-container {
+#docs-editor {
     display: inline-block;
     border-left: 1px solid #ccc;
 }
