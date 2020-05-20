@@ -1,5 +1,4 @@
-const GRID_BOTTOM_BAR_ID = 'grid-bottom-bar';
-const EDITOR_CONTAINER_ID = 'docs-editor-container';
+const SELECTOR_DOCS_EDITOR_ID = 'docs-editor';
 
 class SheetTabsMover {
   waitRenderTabs(): Promise<void> {
@@ -7,7 +6,7 @@ class SheetTabsMover {
       const loopStartTime = Date.now();
 
       const checkTabsLoop = (): void => {
-        if (document.getElementById(GRID_BOTTOM_BAR_ID)) {
+        if (document.getElementById(SELECTOR_DOCS_EDITOR_ID)) {
           resolve();
           return;
         }
@@ -25,20 +24,7 @@ class SheetTabsMover {
     });
   }
 
-  moveToTop(): void {
-    const gridBottomBar = document.getElementById(GRID_BOTTOM_BAR_ID);
-    const editorContainer = document.getElementById(EDITOR_CONTAINER_ID);
-
-    if (gridBottomBar && editorContainer) {
-      gridBottomBar.style.zIndex = '0';
-      document.body.insertBefore(gridBottomBar, editorContainer);
-    }
-  }
-
   addLeftTabs() {
-    // document.getElementById("docs-editor").style.whiteSpace = "nowrap";
-    // document.getElementById("waffle-grid-container").style.display = "inline-block";
-
     // wrapper
     const $tabsWrapper = document.createElement("div");
     $tabsWrapper.classList.add("sheets-left-tabs-wrapper");
@@ -71,7 +57,7 @@ class SheetTabsMover {
     // Add containers
     $tabsWrapper.appendChild($searchContainer);
     $tabsWrapper.appendChild($buttonsContainer);
-    document.getElementById("docs-editor").prepend($tabsWrapper);
+    document.getElementById(SELECTOR_DOCS_EDITOR_ID).prepend($tabsWrapper);
 
     // // tmp events
     // var buttons = document.querySelectorAll(".buttons-container button");
@@ -109,6 +95,5 @@ class SheetTabsMover {
 (async (): Promise<void> => {
   const sheetTabsMover = new SheetTabsMover();
   await sheetTabsMover.waitRenderTabs();
-  sheetTabsMover.moveToTop();
   sheetTabsMover.addLeftTabs();
 })();

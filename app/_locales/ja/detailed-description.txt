@@ -1,4 +1,2 @@
-スプレッドシートのタブを上に表示する拡張です
-
 この拡張はユーザーのデータをどこにも送信しません。また、完全にオープンソースです
-https://github.com/yamadashy/sheets-tabs-on-top-extension
+Source: https://github.com/yamadashy/google-sheets-left-tabs

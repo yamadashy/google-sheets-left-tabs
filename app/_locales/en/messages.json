@@ -1,14 +1,14 @@
 {
   "appName": {
-    "message": "Google Sheets Tabs on Top"
+    "message": "Google Sheets Left Tabs"
   },
   "appShortName": {
-    "message": "google-sheets-tabs-on-top"
+    "message": "google-sheets-left-tabs"
   },
   "appDescription": {
-    "message": "Move Google Sheets tabs on top"
+    "message": "Display Google Sheets tabs on left."
   },
   "browserActionTitle": {
-    "message": "Google Sheets Tabs on Top"
+    "message": "Google Sheets Left Tabs"
   }
 }

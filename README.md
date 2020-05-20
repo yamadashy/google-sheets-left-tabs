@@ -1,10 +1,7 @@
-# Move Google Sheets tabs on top.
-
-![](./promo/Screenshot_1280x800.png)
+# Display Google Sheets tabs on left.
 
 ## Install
-
-[Google Sheets tabs on top - Chrome Web Store](https://chrome.google.com/webstore/detail/sheets-tabs-on-top/lbhlhhckfpdpafckdiklcbamkmogjdjc)
+coming soon
 
 # Development
 - Node.js v10.16.0

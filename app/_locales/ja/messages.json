@@ -1,14 +1,14 @@
 {
   "appName": {
-    "message": "スプレッドシートのタブを上に表示"
+    "message": "Google Sheets Left Tabs"
   },
   "appShortName": {
-    "message": "google-sheets-tabs-on-top"
+    "message": "google-sheets-left-tabs"
   },
   "appDescription": {
-    "message": "スプレッドシートのタブを上に表示する拡張機能"
+    "message": "スプレッドシートの横にタブを表示します"
   },
   "browserActionTitle": {
-    "message": "Google Sheets Tabs on Top"
+    "message": "Google Sheets Left Tabs"
   }
 }

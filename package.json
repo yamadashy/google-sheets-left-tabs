@@ -1,7 +1,7 @@
 {
-  "name": "google-sheets-tabs-on-top",
+  "name": "google-sheets-left-tabs",
   "version": "0.0.0",
-  "description": "Move Google Sheets tabs on top",
+  "description": "Display Google Sheets tabs on left",
   "main": "",
   "scripts": {
     "dev": "webextension-toolbox dev",
@@ -20,12 +20,13 @@
     "google",
     "sheets",
     "tab",
-    "documents"
+    "documents",
+    "spreadsheets"
   ],
   "author": "yamadashy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yamadashy/google-sheets-tabs-on-top/issues"
+    "url": "https://github.com/yamadashy/google-sheets-left-tabs/issues"
   },
   "dependencies": {
     "core-js": "3.6.4"
