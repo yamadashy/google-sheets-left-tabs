@@ -1,4 +1,5 @@
-# Display Google Sheets tabs on left.
+# Google Sheets Left Tabs
+Display Google Sheets tabs on left.
 
 ## Install
 coming soon
