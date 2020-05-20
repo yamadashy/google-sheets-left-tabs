@@ -78,6 +78,11 @@ class SheetTabsMover {
 
 (async (): Promise<void> => {
   const sheetTabsMover = new SheetTabsMover();
-  await sheetTabsMover.waitRenderTabs();
-  sheetTabsMover.addLeftTabs();
+  await sheetTabsMover.waitRenderTabs()
+    .then(() => {
+      sheetTabsMover.addLeftTabs();
+    })
+    .catch(() => {
+      // Nothing to do
+    });
 })();
