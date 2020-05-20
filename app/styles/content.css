@@ -1,0 +1,76 @@
+/**
+ * override
+ */
+#docs-editor {
+    white-space: nowrap;
+}
+#waffle-grid-container {
+    display: inline-block;
+    border-left: 1px solid #ccc;
+}
+
+/**
+ * Wrapper
+ */
+.sheets-left-tabs-wrapper {
+    vertical-align: top;
+    display: inline-block;
+    width: 150px;
+    white-space: normal;
+}
+
+/**
+ * Search
+ */
+.sheets-left-tabs-wrapper .search-container {
+    margin: 0.1em;
+}
+.sheets-left-tabs-wrapper .search-container input {
+    margin: 0 0 0 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 28px;
+    width: 100%;
+    padding-left: 0.3em;
+    font-weight: 400;
+}
+
+/**
+ * Buttons
+ */
+.sheets-left-tabs-wrapper .buttons-container {
+    margin: 0.1em;
+}
+.sheets-left-tabs-wrapper .buttons-container .left-tab-button {
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    overflow: hidden;
+    padding-left: 0.3em;
+    border: 1px solid #e8eaed;
+    border-left: 4px solid #ccc;
+    color: #80868b;
+}
+.sheets-left-tabs-wrapper .buttons-container .left-tab-button:hover {
+    background: #e8e8e8;
+}
+.sheets-left-tabs-wrapper .buttons-container .left-tab-button:active {
+    background: #e5e5e5;
+}
+.sheets-left-tabs-wrapper .buttons-container .left-tab-button.loading {
+    background: #e5e5e5;
+}
+.sheets-left-tabs-wrapper .buttons-container .left-tab-button.active {
+    background: #ffffff;
+    box-shadow: 0 1px 3px 1px rgba(60,64,67,.15);
+    color: #188038;
+}
+.sheets-left-tabs-wrapper .buttons-container .left-tab-button.hide {
+    display: none;
+}
