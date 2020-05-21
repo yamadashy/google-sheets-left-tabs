@@ -13,7 +13,7 @@ export function waitElement(selector: string, timeout: number): Promise<void> {
       // Found element
       if (document.querySelector(selector)) {
         if (timeoutId) {
-          clearTimeout(timeoutId);
+          window.clearTimeout(timeoutId);
         }
 
         resolve();
@@ -22,7 +22,7 @@ export function waitElement(selector: string, timeout: number): Promise<void> {
     });
 
     // Timeout
-    timeoutId = setTimeout((): void => {
+    timeoutId = window.setTimeout((): void => {
       observer.disconnect();
       reject();
     }, timeout);
