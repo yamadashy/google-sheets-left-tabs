@@ -26,12 +26,12 @@ class SheetTabsMover {
 
     // Add buttons
     const $tabs = document.querySelectorAll('.docs-sheet-container-bar .docs-sheet-tab');
-    $tabs.forEach(($tab, index) => {
+    $tabs.forEach(($tab) => {
       const leftTabButton = document.createElement('div');
       leftTabButton.classList.add('left-tab-button');
       leftTabButton.innerText = $tab.textContent;
 
-      if (index === 2) {
+      if ($tab.classList.contains('docs-sheet-active-tab')) {
         leftTabButton.classList.add('active');
       }
 
