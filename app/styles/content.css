@@ -9,13 +9,48 @@
     border-left: 1px solid #ccc;
 }
 
+.docs-sheet-container {
+    height: auto !important;
+}
+
+.docs-sheet-outer-container {
+    width: 170px !important;
+}
+
+.docs-sheet-container-bar {
+    width: 150px !important;
+    max-width: 150px !important;
+    white-space: normal !important;
+    padding: 0 !important;
+    box-orient: vertical !important;
+}
+
+.docs-sheet-container-bar .docs-sheet-tab  {
+    width: 150px !important;
+    box-sizing: border-box !important;
+}
+
+.docs-sheet-container-bar .docs-sheet-tab .docs-sheet-tab-name {
+    width: 100px !important;
+    max-width: 100px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;;
+    text-overflow: ellipsis !important;;
+}
+
+.docs-sheet-container-bar .docs-sheet-tab .docs-sheet-tab-color {
+    width: 4px !important;
+    height: 100% !important;
+}
+
+
 /**
  * Wrapper
  */
 .sheets-left-tabs-wrapper {
     vertical-align: top;
     display: inline-block;
-    width: 150px;
+    width: 170px;
     white-space: normal;
 }
 
@@ -40,6 +75,9 @@
  */
 .sheets-left-tabs-wrapper .buttons-container {
     margin: 0.1em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100px;
 }
 .sheets-left-tabs-wrapper .buttons-container .left-tab-button {
     box-sizing: border-box;
